@@ -25,4 +25,3 @@ runs:
     - ${{ inputs.base }}
     - --branch
     - ${{ inputs.head }}
-    - --no-verification
