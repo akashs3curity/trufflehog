@@ -17,7 +17,7 @@ branding:
   color: "green"
 runs:
   using: "docker"
-  image: "akashagrawal/trufflehogv3:0.0.1"
+  image: "docker://registry.hub.docker.com/akashagrawal/trufflehogv3:0.0.1"
   args:
     - git
     - file://${{ inputs.path }}
