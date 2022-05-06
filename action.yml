@@ -26,3 +26,4 @@ runs:
     - --branch
     - ${{ inputs.head }}
     - --fail
+    - --no-verification
