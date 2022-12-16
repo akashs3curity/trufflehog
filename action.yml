@@ -19,10 +19,5 @@ runs:
   using: "docker"
   image: "docker://registry.hub.docker.com/akashagrawal/trufflehogv3:latest"
   args:
-    - git
-    - file://${{ inputs.path }}
-    - --since-commit
-    - ${{ inputs.base }}
-    - --branch
-    - ${{ inputs.head }}
-    - --fail
+    - filesystem
+    - --directory=.
