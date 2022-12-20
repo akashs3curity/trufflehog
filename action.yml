@@ -20,4 +20,4 @@ runs:
   image: "docker://registry.hub.docker.com/akashagrawal/trufflehogv3:latest"
   args:
     - filesystem
-    - --directory=.
+    - --directory=${{ inputs.path }}
